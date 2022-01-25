@@ -1,6 +1,6 @@
 //Question Link-->https://leetcode.com/problems/majority-element/
 
-//In this question, I have used: Boyer-Moore Majority Voting Algorithm
+//In this question, I have used: Boyer-Moore Majority Voting Algorithm (reference: https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/)
 //Time Complexity: O(n)
 //Space Complexity: O(1)
 
