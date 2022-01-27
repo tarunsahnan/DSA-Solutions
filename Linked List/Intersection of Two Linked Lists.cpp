@@ -52,3 +52,4 @@ ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         }
         
         return NULL;
+}
