@@ -29,3 +29,7 @@ int helper(vector<int>& nums,int target,int start, int end){
 
     }
     }
+        
+    int search(vector<int>& nums, int target) {
+        return helper(nums,target,0,nums.size()-1);
+    }
