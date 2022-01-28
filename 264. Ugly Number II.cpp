@@ -4,6 +4,7 @@ Ugly Number means the number whose prime factors are 2,3, and 5 only. We can als
 An efficient algorithm of O(n) Time complexity is that we can just multiply the previous number by 2,3, or 5.
 */
 
+
 int nthUglyNumber(int n) {
         
         int x2=0,x3=0,x5=0,last;
