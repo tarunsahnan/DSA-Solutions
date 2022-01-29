@@ -1,7 +1,20 @@
 //Question Link--> https://leetcode.com/problems/merge-k-sorted-lists/
 
 
- //function to merge two sorted lists in sorted manner
+ /**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    
+    //function to merge two sorted lists in sorted manner
     ListNode* merge2list(ListNode* l1, ListNode* l2){
         
         ListNode Dummy;
@@ -39,10 +52,10 @@
         
         int n=lists.size()-1;   // n will hold the length of list(vector)
         
-        n/=2;                   //we are dividng the list into half
+        
         
         while(2*n > 1){
-        for(int i=0;i<=n;i++)
+        for(int i=0;i<=n/2;i++)
             if(i != n-i)
                 lists[i]=merge2list(lists[i],lists[n-i]); //merge i and n-ith linked list;
             n/=2;
@@ -50,3 +63,4 @@
         
         return lists[0];  //return first linked list because we have merge all linked lists in that only
     }
+};
