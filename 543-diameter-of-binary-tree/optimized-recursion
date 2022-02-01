@@ -1,0 +1,24 @@
+//Question Link --> https://leetcode.com/problems/diameter-of-binary-tree/
+
+int helper(TreeNode * root, int &height){
+        
+        if(!root){ height =0; return 0; }
+        
+        int leftH=0,rightH=0;
+        
+        int diameterLeft=helper(root->left,leftH);
+        int diameterRight=helper(root->right,rightH);
+        
+        height=max(leftH,rightH) + 1;
+        
+        return max(leftH+rightH,max(diameterLeft,diameterRight));
+        
+    }
+    
+    int diameterOfBinaryTree(TreeNode* root) {
+        
+        if(!root) return 0;
+        int height=0;
+        return helper(root,height);
+         
+    }
