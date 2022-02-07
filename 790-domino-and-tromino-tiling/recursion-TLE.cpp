@@ -24,19 +24,19 @@ public:
         
         if(row1 > row2){
             
-            ans += rec(row1 -2,row2);
-            ans += rec(row1-2,row2-1);
+            ans += (rec(row1 -2,row2))%N;
+            ans += (rec(row1-2,row2-1))%N;
             
         }
         
         if(row1 < row2){
             
-            ans += rec(row1,row2-2);
-            ans += rec(row1-1,row2-2);
+            ans += (rec(row1,row2-2))%N;
+            ans += (rec(row1-1,row2-2))%N;
             
         }
             
-        return ans;
+        return ans%N;
     }
     
     int numTilings(int n) {
