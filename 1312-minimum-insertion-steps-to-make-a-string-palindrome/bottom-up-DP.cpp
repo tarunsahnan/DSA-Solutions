@@ -3,7 +3,7 @@
 class Solution {
 public:
     
-    //Least Common Subsequence 
+    //Longest Common Subsequence 
     
     int dp[505][505];
     int minInsertions(string s) {
