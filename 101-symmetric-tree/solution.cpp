@@ -9,22 +9,14 @@ public:
             return true;
         }
         
-        if(rootL==NULL || rootR==NULL){
+        if(rootL==NULL || rootR==NULL || rootL->val != rootR->val){
             return false;
         }
         
-        if(rootL->val == rootR->val)
-            return ((helper(rootL->left, rootR->right)) and (helper(rootL->right, rootR->left)));
-        
-        return false;
-        
+        return helper(rootL->left, rootR->right) and helper(rootL->right, rootR->left);
     }
     
     bool isSymmetric(TreeNode* root) {
-        
-        if(!root==NULL)
-            return true;
-        
         return helper(root->left,root->right);
     }
 };
