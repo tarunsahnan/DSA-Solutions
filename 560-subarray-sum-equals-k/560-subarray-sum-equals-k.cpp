@@ -12,7 +12,6 @@ public:
         unordered_map<int,int> hash;
 
         for(int i=0;i<n;i++){
-         
             if(prefix[i] == k)
                 res++;
             
