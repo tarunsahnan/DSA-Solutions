@@ -104,7 +104,7 @@ struct Node
 
 
 //Function to find the vertical width of a Binary Tree.
-int mmax=0,mmin=0;
+// int mmax=0,mmin=0;
 
 void lengthUtil(Node* root, int &maximum,
                 int &minimum, int curr=0)
