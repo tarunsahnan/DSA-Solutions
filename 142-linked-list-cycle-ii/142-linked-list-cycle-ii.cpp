@@ -27,8 +27,8 @@ public:
         
         slow=head;
         
-        if(slow == fast->next)
-            return fast->next;
+        // if(slow == fast->next)
+        //     return fast->next;
         
         while(slow != fast){
             slow=slow->next;
